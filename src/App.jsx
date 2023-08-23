@@ -28,8 +28,8 @@ function App() {
           />
         </div>
 
-        <Spacer height="4" />
-        
+        <Spacer height="8" />
+
         <PrimaryInput
           value={email}
           placeholder="exemplo@email.com"
@@ -38,12 +38,22 @@ function App() {
           label="E-mail"
         />
 
-        <Spacer height="4" />
+        <Spacer height="8" />
 
-        <Button
-        width="100%"
-        colorScheme="green">Enviar</Button>
+        <Button width="100%" colorScheme="green">
+          Enviar
+        </Button>
       </form>
+      <Spacer width="6" maxWidth="4" />
+      <div className="product-details">
+
+        <h2>Plano Mensal</h2>
+        <Spacer width="4"/>
+        <p>você irá pagar</p>
+        <span>R$ 250,00</span>
+        <Spacer width="4"/>
+        <p>Regras: Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repudiandae quasi quis quos voluptatibus, sint, velit quae laborum vel natus veniam quisquam itaque</p>
+      </div>
     </div>
   );
 }
